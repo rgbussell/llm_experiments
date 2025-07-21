@@ -1,0 +1,4 @@
+{
+    "endpoint": "mistral",
+    "payload": {"role": "user", "content": "what is python", "model": "mistral", "stream": false}
+}

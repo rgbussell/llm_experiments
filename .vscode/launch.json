@@ -1,0 +1,21 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "llm_api_calls test",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/ollama/src/llm_api_calls.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}llm_experiments/bin/python"
+            },
+            "args": ["--payload", "${workspaceFolder}/ollama/queries/payload1.json", "--endpoint", "mistral"],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
